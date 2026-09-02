@@ -33,7 +33,13 @@ The batch-file format uses three lines per scan target:
 
 ## Validation
 
-The script passes `bash -n` syntax validation and has been exercised against loopback test ports.
+The script passes `bash -n` syntax validation and has been exercised against loopback test ports, invalid ports, and reversed ranges.
+
+```bash
+bash tests/test_portscanner.sh
+```
+
+The test creates a temporary localhost service, verifies open-port detection, and closes the service automatically. [View the sanitized sample output](sample-output/localhost-scan.txt).
 
 ## Authorized Use
 
