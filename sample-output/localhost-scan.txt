@@ -1,0 +1,5 @@
+$ ./portscanner.sh -t 1 127.0.0.1 45676 45680
+Scanning 127.0.0.1 ports 45676-45680 with a 1s timeout
+45678  open
+
+The open port was created temporarily on localhost for validation and closed after the test.
